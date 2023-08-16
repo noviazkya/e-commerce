@@ -10,19 +10,19 @@
             <p class="bg-teal-accent-400 mb-2 inline-block rounded-full bg-pink-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-900">25% off this perfume</p>
           </div>
           <h2 class="mb-6 max-w-lg text-3xl font-extrabold text-slate-700 sm:text-5xl sm:leading-snug">
-            Discover Fantasy<br/>
-            Aromas
-            <span class="rounded- abg-gradient-to-r inline-block bg-pink-400 from-pink-400 to-sky-400 px-2 font-bold text-white"> Perfume </span>
+            𝘿𝙞𝙨𝙘𝙤𝙫𝙚𝙧 𝙁𝙖𝙣𝙩𝙖𝙨𝙮 <br/>
+            𝘼𝙧𝙤𝙢𝙖𝙨
+            <span class="rounded- abg-gradient-to-r inline-block bg-pink-400 from-pink-400 to-sky-400 px-2 font-bold text-white"> 𝙋𝙚𝙧𝙛𝙪𝙢𝙚 </span>
           </h2>
           <p class="text-base text-gray-700 md:text-lg"> Feel the sensation of the aroma of the lure. </p>
         </div>
         <div class="flex items-center">
-          <a href="/product" class="bg-pink-400a mr-6 inline-flex h-12 items-center justify-center rounded-full bg-gradient-to-r from-sky-400 to-pink-400 px-8 font-medium tracking-wide text-white shadow-lg shadow-pink-300 outline-none transition duration-200 hover:scale-110 hover:bg-pink-500 focus:ring"> Shop Now! </a>
+          <a href="/product" class="bg-pink-400a mr-6 inline-flex h-12 items-center justify-center rounded-full bg-gradient-to-r from-sky-400 to-pink-400 px-8 font-medium tracking-wide text-white shadow-lg shadow-pink-300 outline-none transition duration-200 hover:scale-110 hover:bg-pink-500 focus:ring"> 𝙎𝙝𝙤𝙥 𝙉𝙤𝙬 </a>
           <a href="/" class="inline-flex items-center font-semibold text-sky-400 transition-colors duration-200 hover:text-pink-400">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
             </svg>
-            Watch Review </a
+            𝘞𝘢𝘵𝘤𝘩 𝘙𝘦𝘷𝘪𝘦𝘸 </a
           >
         </div>
       </div>

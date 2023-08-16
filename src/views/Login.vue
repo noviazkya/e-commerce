@@ -4,7 +4,7 @@
   <div class="relative flex w-96 flex-col space-y-5 rounded-lg border bg-white px-5 py-10 shadow-xl sm:mx-auto">
     <div class="-z-10 absolute top-4 left-1/2 h-full w-5/6 -translate-x-1/2 rounded-lg bg-pink-600 sm:-right-10 sm:top-auto sm:left-auto sm:w-full sm:translate-x-0"></div>
     <div class="mx-auto mb-2 space-y-3">
-      <h1 class="text-center text-3xl font-bold text-gray-700"> Login </h1>
+      <h1 class="text-center text-3xl font-bold text-gray-700">𝙇𝙤𝙜𝙞𝙣</h1>
       <p class="text-gray-500">Sign in to access your account</p>
     </div>
     <form id="" class="mb-4" @submit.prevent="performLogin">
@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="flex w-full items-center">
-      <button type="submit" class="shrink-0 inline-block w-36 rounded-lg bg-pink-600 py-3 font-bold text-white mt-2">Login</button>
+      <button type="submit" class="shrink-0 inline-block w-36 rounded-lg bg-pink-600 py-3 font-bold text-white mt-2">𝘓𝘰𝘨𝘪𝘯</button>
       <a class="w-full text-center text-sm font-medium text-gray-600 hover:underline" href="#">Forgot your password?</a>
     </div>
     <p class="text-center text-gray-600">
@@ -59,9 +59,9 @@ export default {
                 // redirect to the desired route on successful login
                 this.$router.push('/');
             } else {
-                alert("Login Failed");
+                alert("𝙇𝙤𝙜𝙞𝙣 𝙁𝙖𝙞𝙡𝙚𝙙");
             }
         },
     },
 };
-</script>
+</script> 
