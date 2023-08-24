@@ -1,7 +1,7 @@
 <template>
+    <!-- <br>
     <br>
-    <br>
-    <br>
+    <br> -->
     <div class="font-sans text-base text-gray-900 sm:px-10">
   <div class="text-base text-gray-900">
     <div class="mx-auto w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
@@ -22,10 +22,10 @@
       <div class="mb-4"><label class="text mb-2 block font-medium" for="message">Message:</label><textarea class="h-52 w-full rounded border border-gray-300 px-3 py-2 outline-none ring-sky-500 focus:ring" id="message"></textarea></div>
       <div class="flex items-center">
         <div class="flex-1"></div>
-        <button class="rounded-xl bg-pink-600 px-4 py-3 text-center font-bold text-white hover:bg-pink-700" type="submit">𝘚𝘦𝘯𝘥 𝘮𝘦𝘴𝘴𝘢𝘨𝘦</button>
+        <button class="rounded-xl bg-pink-700 px-4 py-3 text-center font-bold text-white hover:bg-pink-700" type="submit">𝘚𝘦𝘯𝘥 𝘮𝘦𝘴𝘴𝘢𝘨𝘦</button>
       </div>
     </form>
-    <div class="mt-10 bg-pink-600 px-10 py-8 text-gray-100 md:mt-0 md:ml-auto">
+    <div class="mt-10 bg-pink-700 px-10 py-8 text-gray-100 md:mt-0 md:ml-auto">
       <div class="">
         <p class="mb-4 font-medium border-b  pb-2">OFFICE HOURS</p>
         <p class="mb-4">Monday – Saturday: 08:00 – 17:00</p>
@@ -33,7 +33,7 @@
         <p class="mb-4">Weekend: Closed</p>
         <p class="mb-4">
           Email:
-          <a href="#" class="font-semibold underline">novi's@perfume.id</a>
+          <a href="#" class="font-semibold underline">novi's@shop.id</a>
         </p>
         <p class="mb-4">
           Phone:

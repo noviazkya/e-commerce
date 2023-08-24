@@ -1,8 +1,8 @@
 <template>
+    <!-- <br>
     <br>
     <br>
-    <br>
-    <br>
+    <br> -->
     <div class="flex flex-col items-center border-b bg-white py-4 sm:flex-row sm:px-10 lg:px-20 xl:px-32">
   <a href="#" class="text-2xl font-bold text-gray-800">𝘾𝙝𝙚𝙘𝙠𝙤𝙪𝙩</a>
   <div class="mt-4 py-2 text-xs sm:mt-0 sm:ml-auto sm:text-base">
@@ -35,21 +35,21 @@
 </div>
 <div class="grid sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-32">
   <div class="px-4 pt-8">
-    <p class="text-xl font-medium">Order Perfume</p>
+    <p class="text-xl font-medium">Order Products</p>
     <p class="text-gray-400">Check your items. And select a suitable shipping method.</p>
     <div class="mt-8 space-y-3 rounded-lg border bg-white px-2 py-4 sm:px-6">
       <div class="flex flex-col rounded-lg bg-white sm:flex-row">
-        <img class="m-2 h-24 w-28 rounded-md border object-cover object-center" src="../assets/img/arabianmusk.jpeg" alt="" />
+        <img class="m-2 h-24 w-28 rounded-md border object-cover object-center" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
         <div class="flex w-full flex-col px-4 py-4">
-          <span class="font-semibold">Arabian Musk </span>
+          <span class="font-semibold"> Gojo Kawai </span>
           <span class="float-right text-gray-400">$99.00 - $85.00</span>
           <p class="text-lg font-bold">$99.00</p>
         </div>
       </div>
       <div class="flex flex-col rounded-lg bg-white sm:flex-row">
-        <img class="m-2 h-24 w-28 rounded-md border object-cover object-center" src="../assets/img/musk2.jpeg" alt="" />
+        <img class="m-2 h-24 w-28 rounded-md border object-cover object-center" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
         <div class="flex w-full flex-col px-4 py-4">
-          <span class="font-semibold">Albanian Chanel</span>
+          <span class="font-semibold"> Gojo Kawai </span>
           <span class="float-right text-gray-400">$299.00</span>
           <p class="mt-auto text-lg font-bold">$299.00</p>
         </div>
@@ -62,7 +62,7 @@
         <input class="peer hidden" id="radio_1" type="radio" name="radio" checked />
         <span class="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
         <label class="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4" for="radio_1">
-          <img class="w-14 object-contain" src="/images/naorrAeygcJzX0SyNI4Y0.png" alt="" />
+          <img class="w-14 object-contain" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
           <div class="ml-5">
             <span class="mt-2 font-semibold">Fedex Delivery</span>
             <p class="text-slate-500 text-sm leading-6">Delivery: 2-4 Days</p>
@@ -73,7 +73,7 @@
         <input class="peer hidden" id="radio_2" type="radio" name="radio" checked />
         <span class="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
         <label class="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4" for="radio_2">
-          <img class="w-14 object-contain" src="/images/oG8xsl3xsOkwkMsrLGKM4.png" alt="" />
+          <img class="w-14 object-contain" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
           <div class="ml-5">
             <span class="mt-2 font-semibold">Fedex Delivery</span>
             <p class="text-slate-500 text-sm leading-6">Delivery: 2-4 Days</p>
@@ -123,7 +123,7 @@
         <div class="relative flex-shrink-0 sm:w-7/12">
           <input type="text" id="billing-address" name="billing-address" class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="Street Address" />
           <div class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
-            <img class="h-4 w-4 object-contain" src="https://flagpack.xyz/_nuxt/4c829b6c0131de7162790d2f897a90fd.svg" alt="" />
+            <img class="h-4 w-4 object-contain" src="https://i.pinimg.com/564x/1a/6c/39/1a6c39a1cb6d65f53b9722ce39c57eb7.jpg" alt="" />
           </div>
         </div>
         <select type="text" name="billing-state" class="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500">

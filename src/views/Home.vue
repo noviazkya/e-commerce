@@ -7,18 +7,17 @@
       <div class="mb-16 lg:my-auto lg:max-w-lg">
         <div class="mb-6 max-w-xl">
           <div>
-            <p class="bg-teal-accent-400 mb-2 inline-block rounded-full bg-pink-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-900">25% off this perfume</p>
+            <p class="bg-teal-accent-400 mb-2 inline-block rounded-full bg-pink-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-900">25% off this shop</p>
           </div>
           <h2 class="mb-6 max-w-lg text-3xl font-extrabold text-slate-700 sm:text-5xl sm:leading-snug">
-            𝘿𝙞𝙨𝙘𝙤𝙫𝙚𝙧 𝙁𝙖𝙣𝙩𝙖𝙨𝙮 <br/>
-            𝘼𝙧𝙤𝙢𝙖𝙨
-            <span class="rounded- abg-gradient-to-r inline-block bg-pink-400 from-pink-400 to-sky-400 px-2 font-bold text-white"> 𝙋𝙚𝙧𝙛𝙪𝙢𝙚 </span>
+            𝙁𝙖𝙣𝙩𝙖𝙨𝙮 𝙎𝙖𝙩𝙞𝙨𝙛𝙞𝙚𝙙 <br/>
+            <span class="rounded- abg-gradient-to-r inline-block bg-pink-400 from-pink-400 to-sky-400 px-2 font-bold text-white"> 𝙎𝙝𝙤𝙥𝙥𝙞𝙣𝙜 ! </span>
           </h2>
-          <p class="text-base text-gray-700 md:text-lg"> Feel the sensation of the aroma of the lure. </p>
+          <p class="text-base text-gray-700 md:text-lg"> Safe and quality shopping here. </p>
         </div>
         <div class="flex items-center">
           <a href="/product" class="bg-pink-400a mr-6 inline-flex h-12 items-center justify-center rounded-full bg-gradient-to-r from-sky-400 to-pink-400 px-8 font-medium tracking-wide text-white shadow-lg shadow-pink-300 outline-none transition duration-200 hover:scale-110 hover:bg-pink-500 focus:ring"> 𝙎𝙝𝙤𝙥 𝙉𝙤𝙬 </a>
-          <a href="/" class="inline-flex items-center font-semibold text-sky-400 transition-colors duration-200 hover:text-pink-400">
+          <a href="https://www.youtube.com/watch?v=1tk1pqwrOys" class="inline-flex items-center font-semibold text-sky-400 transition-colors duration-200 hover:text-pink-400">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
             </svg>
@@ -34,18 +33,18 @@
       <!-- Col 2 -->
       <div class="hidden w-56 items-center space-y-3 lg:flex">
         <div class="overflow-hidden rounded-xl bg-yellow-400">
-          <img class="h-full w-full object-cover" src="https://i.pinimg.com/564x/9f/92/00/9f9200a5aaa9eafc5efb23981b64a9bc.jpg" alt="" />
+          <img class="h-full w-full object-cover" src="https://i.pinimg.com/564x/0e/7f/93/0e7f9389ee6c4388691f8b9f42f0aa0b.jpg" alt="" />
         </div>
       </div>
       <div class="w-full flex-col space-y-3 rounded-xl py-4 lg:flex lg:w-80">
         <div class="h-40 overflow-hidden rounded-xl bg-green-600/60">
-          <img class="mx-auto h-full w-full object-cover" src="https://i.pinimg.com/564x/e5/30/c5/e530c59acdb307b90f61581c2aed1419.jpg" alt="" />
+          <img class="mx-auto h-full w-full object-cover" src="https://i.pinimg.com/564x/8b/c8/7b/8bc87bc8fdc9856323d77f83877ec354.jpg" alt="" />
         </div>
         <div class="h-40 overflow-hidden rounded-xl bg-pink-600/60">
-          <img class="mx-auto h-full w-full object-cover" src="https://i.pinimg.com/564x/c0/1f/81/c01f81e15533a3975ec51566d7c30c64.jpg" alt="" />
+          <img class="mx-auto h-full w-full object-cover" src="https://i.pinimg.com/564x/9c/9e/3d/9c9e3db0833a1db4fc2617551ffc8007.jpg" alt="" />
         </div>
         <div class="h-40 overflow-hidden rounded-xl bg-blue-600/60">
-          <img class="mx-auto h-full w-full object-cover" src="https://i.pinimg.com/564x/67/e4/1f/67e41f70942d14b3c8dfe2c0d62873eb.jpg" alt="" />
+          <img class="mx-auto h-full w-full object-cover" src="https://i.pinimg.com/564x/0a/71/89/0a71897344043272630a52816dd6c313.jpg" alt="" />
         </div>
       </div>
     </div>

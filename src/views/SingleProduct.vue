@@ -1,7 +1,7 @@
 <template>
+    <!-- <br>
     <br>
-    <br>
-    <br>
+    <br> -->
     <section class="py-12 sm:py-16"> 
   <div class="container mx-auto px-4">
     <nav class="flex">
@@ -23,7 +23,7 @@
 
         <li class="text-left">
           <div class="flex items-center">
-            <span class="mx-2 text-gray-400"></span>
+            <span class="mx-2 text-gray-800">/ {{ getSingleProduct.name }}</span>
             <div class="-m-1">
             </div>
           </div>
@@ -36,20 +36,20 @@
         <div class="lg:flex lg:items-start">
           <div class="lg:order-2 lg:ml-5">
             <div class="max-w-xl overflow-hidden rounded-lg">
-              <img class="h-full w-full max-w-full object-cover" src="../assets/img/arabianmusk.jpeg" alt="" />
+              <img class="h-full w-full max-w-full object-cover" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
             </div>
           </div>
 
           <div class="mt-2 w-full lg:order-1 lg:w-32 lg:flex-shrink-0">
             <div class="flex flex-row items-start lg:flex-col">
               <button type="button" class="flex-0 aspect-square mb-3 h-20 overflow-hidden rounded-lg border-2 border-gray-900 text-center">
-                <img class="h-full w-full object-cover" src="../assets/img/musk2.jpeg" alt="" />
+                <img class="h-full w-full object-cover" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
               </button>
               <button type="button" class="flex-0 aspect-square mb-3 h-20 overflow-hidden rounded-lg border-2 border-transparent text-center">
-                <img class="h-full w-full object-cover" src="../assets/img/musk3.jpeg" alt="" />
+                <img class="h-full w-full object-cover" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
               </button>
               <button type="button" class="flex-0 aspect-square mb-3 h-20 overflow-hidden rounded-lg border-2 border-transparent text-center">
-                <img class="h-full w-full object-cover" src="../assets/img/musk4.jpeg" alt="" />
+                <img class="h-full w-full object-cover" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
               </button>
             </div>
           </div>
@@ -57,7 +57,7 @@
       </div>
 
       <div class="lg:col-span-2 lg:row-span-2 lg:row-end-2">
-        <h1 class="sm: text-2xl font-bold text-gray-900 sm:text-3xl"> Arabian Musk </h1>
+        <h1 class="sm: text-2xl font-bold text-gray-900 sm:text-3xl"> {{ getSingleProduct.name }}</h1>
 
         <div class="mt-5 flex items-center">
           <div class="flex items-center">
@@ -80,23 +80,14 @@
           <p class="ml-2 text-sm font-medium text-gray-500">1,209 Reviews</p>
         </div>
 
-        <h2 class="mt-8 text-base text-gray-900">Perfume Type</h2>
+        <h2 class="mt-8 text-base text-gray-900"> 𝘽𝙧𝙖𝙣𝙙 </h2>
         <div class="mt-3 flex select-none flex-wrap items-center gap-1">
           <label class="">
-            <input type="radio" name="type" value="Powder" class="peer sr-only" checked />
-            <p class="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">Soft</p>
-          </label>
-          <label class="">
-            <input type="radio" name="type" value="Whole Bean" class="peer sr-only" />
-            <p class="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">Durable</p>
-          </label>
-          <label class="">
             <input type="radio" name="type" value="Groud" class="peer sr-only" />
-            <p class="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">Musk</p>
+            <p class="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold"> {{ getSingleProduct.name }} </p>
           </label>
         </div>
-
-        <h2 class="mt-8 text-base text-gray-900">Choose subscription</h2>
+        <!-- <h2 class="mt-8 text-base text-gray-900">Choose subscription</h2>
         <div class="mt-3 flex select-none flex-wrap items-center gap-1">
           <label class="">
             <input type="radio" name="subscription" value="4 Months" class="peer sr-only" />
@@ -113,11 +104,10 @@
             <p class="peer-checked:bg-black peer-checked:text-white rounded-lg border border-black px-6 py-2 font-bold">12 Months</p>
             <span class="mt-1 block text-center text-xs">$40/mo</span>
           </label>
-        </div>
-
+        </div> -->
         <div class="mt-10 flex flex-col items-center justify-between space-y-4 border-t border-b py-4 sm:flex-row sm:space-y-0">
           <div class="flex items-end">
-            <h1 class="text-3xl font-bold">$60.50</h1>
+            <h1 class="text-3xl font-bold">${{ getSingleProduct.base_price }}</h1>
             <span class="text-base">/month</span>
           </div>
 
@@ -145,7 +135,6 @@
           </li>
         </ul>
       </div>
-
       <div class="lg:col-span-3">
         <div class="border-b border-gray-300">
           <nav class="flex gap-4">
@@ -157,13 +146,12 @@
             </a>
           </nav>
         </div>
-
         <div class="mt-8 flow-root sm:mt-12">
-          <h1 class="text-3xl font-bold">Delivered To Your Door</h1>
-          <p class="mt-4">By entering your address.</p>
-          <h1 class="mt-8 text-3xl font-bold">From Mustika Best Arabic Perfume</h1>
-          <p class="mt-4">With natural ingredients that keep the fragrance of perfume longer lasting.</p>
+          <h1 class="text-3xl font-bold">𝘿𝙚𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣</h1>
           <p class="mt-4"></p>
+          <h1 class="mt-8 text-3xl font-bold"></h1>
+          <p class="mt-4"></p>
+          <p class="mt-4">{{ getSingleProduct.description }}</p>
         </div>
       </div>
     </div>
@@ -172,23 +160,15 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+import { mapState } from "vuex";
   
-export default {
-  computed: {
-      ...mapGetters("product", ["getProductById"]),
-      product() {
-          return this.getProductById(Number(this.$route.params.id));
-      },
-  },
-  methods: {
-      ...mapActions("product", ["fetchSingleProduct"]),
-  },
-  mounted() {
-      const productId = this.$route.params.id;
-      console.log("Fetching single product with ID:", productId);
-      this.fetchSingleProduct(productId);
-  },
-
-};
+  export default {
+      props: ['slug'],
+    computed: {
+        ...mapState('product', ['getSingleProduct']),
+    },
+    mounted() {
+        return this.$store.dispatch('product/fetchSingleProduct', this.slug)
+    },
+  };
 </script>

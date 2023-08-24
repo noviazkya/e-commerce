@@ -1,6 +1,6 @@
 <template>
-    <br>
-    <section class="h-screen bg-gray-100 py-12 sm:py-16 lg:py-20">
+    <!-- <br> -->
+    <section class="h-screen bg-white-100 py-12 sm:py-16 lg:py-20">
   <div class="mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-center">
       <h1 class="text-2xl font-semibold text-gray-900">𝙔𝙤𝙪𝙧 𝘾𝙖𝙧𝙩</h1>
@@ -13,13 +13,13 @@
             <ul class="-my-8">
               <li class="flex flex-col space-y-3 py-6 text-left sm:flex-row sm:space-x-5 sm:space-y-0">
                 <div class="shrink-0">
-                  <img class="h-24 w-24 max-w-full rounded-lg object-cover" src="../assets/img/arabianmusk.jpeg" alt="" />
+                  <img class="h-24 w-24 max-w-full rounded-lg object-cover" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
                 </div>
 
                 <div class="relative flex flex-1 flex-col justify-between">
                   <div class="sm:col-gap-5 sm:grid sm:grid-cols-2">
                     <div class="pr-8 sm:pr-5">
-                      <p class="text-base font-semibold text-gray-900">Arabian Musk</p>
+                      <p class="text-base font-semibold text-gray-900">Gojo Kawai :3 </p>
                       <p class="mx-0 mt-1 mb-0 text-sm text-gray-400">$99.00 - $85.00</p>
                     </div>
 
@@ -47,13 +47,13 @@
               </li>
               <li class="flex flex-col space-y-3 py-6 text-left sm:flex-row sm:space-x-5 sm:space-y-0">
                 <div class="shrink-0">
-                  <img class="h-24 w-24 max-w-full rounded-lg object-cover" src="../assets/img/musk2.jpeg" alt="" />
+                  <img class="h-24 w-24 max-w-full rounded-lg object-cover" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
                 </div>
 
                 <div class="relative flex flex-1 flex-col justify-between">
                   <div class="sm:col-gap-5 sm:grid sm:grid-cols-2">
                     <div class="pr-8 sm:pr-5">
-                      <p class="text-base font-semibold text-gray-900">Albanian Chanel</p>
+                      <p class="text-base font-semibold text-gray-900">Gojo Kawai :3 </p>
                       <p class="mx-0 mt-1 mb-0 text-sm text-gray-400">$299.00</p>
                     </div>
 
