@@ -23,7 +23,7 @@
           <li><a class="hover:text-pink-700 hover:underline" href="#">Demo</a></li>
           <li><a class="hover:text-pink-700 hover:underline" href="#">Press</a></li>
           <li><a class="hover:text-pink-700 hover:underline" href="#">Support Hub</a></li>
-          <li><a class="hover:text-pink-700 hover:underline" href="#">Contact</a></li>
+          <li><a class="hover:text-pink-700 hover:underline" href="/contact">Contact</a></li>
         </ul>
       </nav>
     </div>

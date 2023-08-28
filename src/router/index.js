@@ -52,7 +52,6 @@ const routes = [
         path: "/product/:slug",
         name: "SingleProduct",
         component: SingleProduct,
-        props: true,
         meta: { requiresLogin: true }
     },
     {

@@ -1,6 +1,6 @@
 <template>
-  <!-- <br>
-  <br> -->
+  <br>
+  <br>
   <div class="mt-20 text-center">
       <span class="font-bold text-4xl"> 𝘼𝙡𝙡 𝙋𝙧𝙤𝙙𝙪𝙘𝙩𝙨 </span>
       <br>
@@ -8,12 +8,12 @@
       <p class="mb-4"> Products presented are of high quality. </p>
     </div>
     <div class="grid grid-cols-4 gap-4">
-  <div v-for="product in getLatestProducts.data" :key="product.id" class="relative m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
-    <router-link :to="{ name: 'SingleProduct', params: { slug: product.slug } }" class="group">
+  <div v-for="product in getProducts.slice(0, 12)" :key="product.slug" class="relative m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
+    <!-- <router-link :to="{ name: 'SingleProduct', params: { slug: product.slug } }" class="group"> -->
     <a href="#">
     <img class="h-60 rounded-t-lg object-cover" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="product image" />
   </a>
-</router-link>
+<!-- </router-link> -->
   <span class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white"> 𝙎𝙖𝙡𝙚 </span>
   <div class="mt-4 px-5 pb-5">
     <a href="#">
@@ -40,14 +40,14 @@
     <div class="flex items-center justify-between">
       <p>
         <span class="text-3xl font-bold text-slate-900">${{ product.base_price }}</span>
-    
       </p>
-      <a href="/cart" class="flex items-center rounded-md bg-pink-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-pink-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
-        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <router-link :to="{ name: 'SingleProduct', params: { slug: product.slug } }" class="group">
+      <a href="" class="flex items-center rounded-md bg-pink-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-pink-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> -->
           <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-        𝘼𝙙𝙙 𝙩𝙤 𝙘𝙖𝙧𝙩 </a
-      >
+        <!-- </svg> -->
+        𝘿𝙚𝙩𝙖𝙞𝙡 𝙥𝙧𝙤𝙙𝙪𝙘𝙩 </a>
+      </router-link>
     </div>
   </div>
 </div>
@@ -59,13 +59,20 @@ import { mapGetters, mapActions } from 'vuex';
 
 export default {
     computed: {
-        ...mapGetters('product', ['getLatestProducts']),
+        ...mapGetters('product', ['getProducts']),
     },
     methods: {
-        ...mapActions('product', ['fetchLatestProducts']),
+        ...mapActions('product', ['fetchProducts']),
+        // getImage(imageURL) {
+        //     return {
+        //         'src': `${imageURL}`,
+        //         'background-size': 'cover',
+        //         'background-position': 'center',
+        //     };
+        // },
     },
-    created() {
-        this.fetchLatestProducts();
+    mounted() {
+        this.fetchProducts();
     },
 }
 </script> 

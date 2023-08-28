@@ -1,9 +1,5 @@
 <template>
-    <!-- <br>
-    <br>
-    <br>
-    <br> -->
-    <div class="flex flex-col items-center border-b bg-white py-4 sm:flex-row sm:px-10 lg:px-20 xl:px-32">
+    <div class="flex flex-col items-center border-b bg-white py-4 sm:flex-row sm:px-10 lg:px-20 xl:px-32 mt-20">
   <a href="#" class="text-2xl font-bold text-gray-800">𝘾𝙝𝙚𝙘𝙠𝙤𝙪𝙩</a>
   <div class="mt-4 py-2 text-xs sm:mt-0 sm:ml-auto sm:text-base">
     <div class="relative">
@@ -11,23 +7,22 @@
         <li class="flex items-center space-x-3 text-left sm:space-x-4">
           <a class="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-200 text-xs font-semibold text-emerald-700" href="#"
             ><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg
-          ></a>
-          <span class="font-semibold text-gray-900">Shop</span>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg></a>
+          <span class="font-semibold text-gray-900">𝙎𝙝𝙤𝙥</span>
         </li>
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
         </svg>
         <li class="flex items-center space-x-3 text-left sm:space-x-4">
           <a class="flex h-6 w-6 items-center justify-center rounded-full bg-gray-600 text-xs font-semibold text-white ring ring-gray-600 ring-offset-2" href="#">2</a>
-          <span class="font-semibold text-gray-900">Shipping</span>
+          <span class="font-semibold text-gray-900">𝙎𝙝𝙞𝙥𝙥𝙞𝙣𝙜</span>
         </li>
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
         </svg>
         <li class="flex items-center space-x-3 text-left sm:space-x-4">
           <a class="flex h-6 w-6 items-center justify-center rounded-full bg-gray-400 text-xs font-semibold text-white" href="#">3</a>
-          <span class="font-semibold text-gray-500">Payment</span>
+          <span class="font-semibold text-gray-500">𝙋𝙖𝙮𝙢𝙚𝙣𝙩</span>
         </li>
       </ul>
     </div>
@@ -35,47 +30,66 @@
 </div>
 <div class="grid sm:px-10 lg:grid-cols-2 lg:px-20 xl:px-32">
   <div class="px-4 pt-8">
-    <p class="text-xl font-medium">Order Products</p>
-    <p class="text-gray-400">Check your items. And select a suitable shipping method.</p>
+    <p class="text-xl font-medium">𝘖𝘳𝘥𝘦𝘳 𝘗𝘳𝘰𝘥𝘶𝘤𝘵𝘴</p>
+    <p class="text-gray-500">Check your items. And select a suitable shipping method.</p>
     <div class="mt-8 space-y-3 rounded-lg border bg-white px-2 py-4 sm:px-6">
-      <div class="flex flex-col rounded-lg bg-white sm:flex-row">
+      <div v-for="checkout in getCart" :key="checkout.cart_id" class="flex flex-col rounded-lg bg-white sm:flex-row">
         <img class="m-2 h-24 w-28 rounded-md border object-cover object-center" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
         <div class="flex w-full flex-col px-4 py-4">
-          <span class="font-semibold"> Gojo Kawai </span>
-          <span class="float-right text-gray-400">$99.00 - $85.00</span>
-          <p class="text-lg font-bold">$99.00</p>
-        </div>
-      </div>
-      <div class="flex flex-col rounded-lg bg-white sm:flex-row">
-        <img class="m-2 h-24 w-28 rounded-md border object-cover object-center" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
-        <div class="flex w-full flex-col px-4 py-4">
-          <span class="font-semibold"> Gojo Kawai </span>
-          <span class="float-right text-gray-400">$299.00</span>
-          <p class="mt-auto text-lg font-bold">$299.00</p>
+          <span class="font-semibold"> {{ checkout.name }} </span>
+          <span class="float-right text-gray-400"></span>
+          <p class="text-lg font-bold">${{ checkout.regular_price }}</p>
         </div>
       </div>
     </div>
 
-    <p class="mt-8 text-lg font-medium">Shipping Methods</p>
+    <p class="mt-8 text-lg font-medium">𝙎𝙝𝙞𝙥𝙥𝙞𝙣𝙜 𝙈𝙚𝙩𝙝𝙤𝙙𝙨</p>
     <form class="mt-5 grid gap-6">
       <div class="relative">
-        <input class="peer hidden" id="radio_1" type="radio" name="radio" checked />
+        <input class="peer hidden" id="radio_payment_1" type="radio" name="radio" />
+        <span class="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
+        <label class="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4" for="radio_payment_1">
+          <img class="w-14 object-contain" src="https://i.pinimg.com/564x/a9/a0/0e/a9a00eb6fcd713fa39f9a0b7ab6e5342.jpg" alt="" />
+          <div class="ml-5">
+            <span class="mt-2 font-semibold">𝘊𝘢𝘴𝘩 𝘖𝘯 𝘋𝘦𝘭𝘪𝘷𝘦𝘳𝘺 (𝘊𝘖𝘋)</span>
+            <p class="text-slate-500 text-sm leading-6">Delivery: 2-4 Days</p>
+          </div>
+        </label>
+      </div>
+    </form>
+    <form class="mt-5 grid gap-6">
+      <div class="relative">
+        <input class="peer hidden" id="radio_payment_2" type="radio" name="radio" />
+        <span class="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
+        <label class="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4" for="radio_payment_2">
+          <img class="w-14 object-contain" src="../assets/img/gopaylogo.png" alt="" />
+          <div class="ml-5">
+            <span class="mt-2 font-semibold">𝘎𝘰 𝘗𝘢𝘺</span>
+            <p class="text-slate-500 text-sm leading-6">Delivery: 2-4 Days</p>
+          </div>
+        </label>
+      </div>
+    </form>
+    <p class="mt-8 text-lg font-medium">𝙎𝙝𝙞𝙥𝙥𝙞𝙣𝙜 𝙀𝙭𝙥𝙚𝙙𝙞𝙩𝙞𝙤𝙣</p>
+    <form class="mt-5 grid gap-6">
+      <div class="relative">
+        <input class="peer hidden" id="radio_1" type="radio" name="radio" checked/>
         <span class="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
         <label class="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4" for="radio_1">
-          <img class="w-14 object-contain" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
+          <img class="w-14 object-contain" src="https://i.pinimg.com/564x/27/33/d4/2733d452329a7a5a73e3922a36e69370.jpg" alt="" />
           <div class="ml-5">
-            <span class="mt-2 font-semibold">Fedex Delivery</span>
+            <span class="mt-2 font-semibold">𝘑&𝘛 𝘌𝘹𝘱𝘳𝘦𝘴𝘴</span>
             <p class="text-slate-500 text-sm leading-6">Delivery: 2-4 Days</p>
           </div>
         </label>
       </div>
       <div class="relative">
-        <input class="peer hidden" id="radio_2" type="radio" name="radio" checked />
+        <input class="peer hidden" id="radio_2" type="radio" name="radio" checked/>
         <span class="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
         <label class="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4" for="radio_2">
-          <img class="w-14 object-contain" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
+          <img class="w-14 object-contain" src="https://i.pinimg.com/564x/cf/9c/18/cf9c18d97b5b7bb116cc99e1c93afcff.jpg" alt="" />
           <div class="ml-5">
-            <span class="mt-2 font-semibold">Fedex Delivery</span>
+            <span class="mt-2 font-semibold">𝘑𝘕𝘌</span>
             <p class="text-slate-500 text-sm leading-6">Delivery: 2-4 Days</p>
           </div>
         </label>
@@ -83,10 +97,10 @@
     </form>
   </div>
   <div class="mt-10 bg-gray-50 px-4 pt-8 lg:mt-0">
-    <p class="text-xl font-medium">Payment Details</p>
-    <p class="text-gray-400">Complete your order by providing your payment details.</p>
+    <p class="text-xl font-medium">𝘗𝘢𝘺𝘮𝘦𝘯𝘵 𝘋𝘦𝘵𝘢𝘪𝘭𝘴</p>
+    <p class="text-gray-500">Complete your order by providing your payment details.</p>
     <div class="">
-      <label for="email" class="mt-4 mb-2 block text-sm font-medium">Email</label>
+      <label for="email" class="mt-4 mb-2 block text-sm font-medium">𝘌𝘮𝘢𝘪𝘭</label>
       <div class="relative">
         <input type="text" id="email" name="email" class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="your.email@gmail.com" />
         <div class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
@@ -95,7 +109,7 @@
           </svg>
         </div>
       </div>
-      <label for="card-holder" class="mt-4 mb-2 block text-sm font-medium">Card Holder</label>
+      <label for="card-holder" class="mt-4 mb-2 block text-sm font-medium">𝘊𝘢𝘳𝘥 𝘏𝘰𝘭𝘥𝘦𝘳</label>
       <div class="relative">
         <input type="text" id="card-holder" name="card-holder" class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm uppercase shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="Your full name here" />
         <div class="pointer-events-none absolute inset-y-0 left-0 inline-flex items-center px-3">
@@ -104,7 +118,7 @@
           </svg>
         </div>
       </div>
-      <label for="card-no" class="mt-4 mb-2 block text-sm font-medium">Card Details</label>
+      <label for="card-no" class="mt-4 mb-2 block text-sm font-medium">𝘊𝘢𝘳𝘥 𝘋𝘦𝘵𝘢𝘪𝘭𝘴</label>
       <div class="flex">
         <div class="relative w-7/12 flex-shrink-0">
           <input type="text" id="card-no" name="card-no" class="w-full rounded-md border border-gray-200 px-2 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="xxxx-xxxx-xxxx-xxxx" />
@@ -118,7 +132,7 @@
         <input type="text" name="credit-expiry" class="w-full rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="MM/YY" />
         <input type="text" name="credit-cvc" class="w-1/6 flex-shrink-0 rounded-md border border-gray-200 px-2 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="CVC" />
       </div>
-      <label for="billing-address" class="mt-4 mb-2 block text-sm font-medium">Billing Address</label>
+      <label for="billing-address" class="mt-4 mb-2 block text-sm font-medium">𝘉𝘪𝘭𝘭𝘪𝘯𝘨 𝘈𝘥𝘥𝘳𝘦𝘴𝘴</label>
       <div class="flex flex-col sm:flex-row">
         <div class="relative flex-shrink-0 sm:w-7/12">
           <input type="text" id="billing-address" name="billing-address" class="w-full rounded-md border border-gray-200 px-4 py-3 pl-11 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="Street Address" />
@@ -127,7 +141,14 @@
           </div>
         </div>
         <select type="text" name="billing-state" class="w-full rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none focus:z-10 focus:border-blue-500 focus:ring-blue-500">
-          <option value="State">State</option>
+          <option value="State">𝘚𝘵𝘢𝘵𝘦 :</option>
+          <option value="Ac">Aceh</option>
+          <option value="Jkt">Jakarta</option>
+          <option value="Jb">Jawa Barat</option>
+          <option value="Jt">Jawa Tengah</option>
+          <option value="Yg">Yogyakarta</option>
+          <option value="Jtt">Jawa Timur</option>
+          <option value="Bl">Bali</option>
         </select>
         <input type="text" name="billing-zip" class="flex-shrink-0 rounded-md border border-gray-200 px-4 py-3 text-sm shadow-sm outline-none sm:w-1/6 focus:z-10 focus:border-blue-500 focus:ring-blue-500" placeholder="ZIP" />
       </div>
@@ -135,20 +156,48 @@
       <!-- Total -->
       <div class="mt-6 border-t border-b py-2">
         <div class="flex items-center justify-between">
-          <p class="text-sm font-medium text-gray-900">Subtotal</p>
-          <p class="font-semibold text-gray-900">$399.00</p>
+          <p class="text-sm font-medium text-gray-900">𝙎𝙪𝙗𝙩𝙤𝙩𝙖𝙡</p>
+          <p class="font-semibold text-gray-900">$ {{ totalHarga }}</p>
         </div>
         <div class="flex items-center justify-between">
-          <p class="text-sm font-medium text-gray-900">Shipping</p>
-          <p class="font-semibold text-gray-900">$8.00</p>
+          <p class="text-sm font-medium text-gray-900">𝙎𝙝𝙞𝙥𝙥𝙞𝙣𝙜</p>
+          <p class="font-semibold text-gray-900">$ 8.00</p>
         </div>
       </div>
       <div class="mt-6 flex items-center justify-between">
-        <p class="text-sm font-medium text-gray-900">Total</p>
-        <p class="text-2xl font-semibold text-gray-900">$408.00</p>
+        <p class="text-sm font-medium text-gray-900">𝙏𝙤𝙩𝙖𝙡</p>
+        <p class="text-2xl font-semibold text-gray-900">$ {{ totalHarga }}</p>
       </div>
     </div>
     <button class="mt-4 mb-8 w-full rounded-md bg-pink-700 px-6 py-3 font-medium text-white">𝙋𝙡𝙖𝙘𝙚 𝙊𝙧𝙙𝙚𝙧</button>
   </div>
 </div>
 </template>
+<script>
+import { mapActions, mapGetters } from 'vuex';
+
+export default {
+  computed: {
+    ...mapGetters('cart', ['getCart']),
+    totalHarga() {
+      this.total = this.getCart.reduce((acc, product) => {
+        return acc + parseFloat(product.regular_price*product.qty);
+      }, 0);
+      return this.total.toFixed(2);
+    },
+  },
+  methods: {
+    ...mapActions('cart', ['fetchCart']),
+    ...mapActions('product', ['fetchProducts']),
+
+  },
+
+  beforeMount() {
+    this.fetchProducts();
+    this.fetchCart();
+  }, 
+  mounted() {
+    this.fetchCart();
+  },
+}
+</script>

@@ -1,6 +1,6 @@
 <template>
-    <!-- <br>
-    <br> -->
+    <br>
+    <br>
     <div class="mt-20 text-center">
       <span class="font-bold text-4xl"> 𝘼𝙡𝙡 𝘾𝙖𝙩𝙚𝙜𝙤𝙧𝙮 </span>
       <br>

@@ -10,7 +10,7 @@
     </div>
     <div class="bg-white shadow-xl rounded-lg py-4">
         <div class="photo-wrapper p-4">
-            <img class="w-32 h-32 rounded-full mx-auto" src="https://i.pinimg.com/564x/5e/d6/39/5ed63905c998c5c3cd29f2ab3890ee2e.jpg" alt="">
+            <img class="w-32 h-32 rounded-full mx-auto" src="../assets/img/novi.jpg" alt="">
         </div>
         <div class="p-3">
             <h3 class="text-center text-xl text-gray-900 font-medium leading-8"> {{ user.name }} </h3>
