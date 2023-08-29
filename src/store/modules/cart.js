@@ -4,9 +4,11 @@ const cart = {
   namespaced: true,
   state: {
     cart: [],
+    dataCheckout: [],
   },
   getters: {
     getCart: (state) => state.cart,
+    getCheckout: (state) => state.dataCheckout,
   },
   actions: {
     async fetchCart({ commit }) {
@@ -67,7 +69,7 @@ const cart = {
             },
           }
         );
-        console.log(response.data.message);
+        alert(response.data.message);
         dispatch("fetchCart");
       } catch (error) {
         alert("Error removing item from cart");
@@ -77,14 +79,8 @@ const cart = {
 
     // checkout
     async checkoutCart(
-      { commit, dispatch },
-      {
-        shippingAddress,
-        billingAddress,
-        paymentType,
-        deliveryType,
-        cart_item_ids,
-      }
+      {commit, dispatch },
+      { shippingAddress, billingAddress, paymentType, deliveryType, cart_item_ids }
     ) {
       try {
         const response = await axios.post(
@@ -96,7 +92,7 @@ const cart = {
             delivery_type: deliveryType,
             cart_item_ids: cart_item_ids,
             transactionId: null,
-            receipt: null,
+            receipt: null
           },
           {
             headers: {
@@ -104,10 +100,11 @@ const cart = {
             },
           }
         );
+        commit('SET_CHECKOUT', response.data);
         console.log(response.data.message);
-        dispatch("fetchCart");
+        dispatch('fetchCart')
       } catch (error) {
-        alert("Error");
+        alert("ErrorCheckout");
         console.log(error);
       }
     },
@@ -116,6 +113,9 @@ const cart = {
   mutations: {
     SET_CART(state, cart) {
       state.cart = cart;
+    },
+    SET_CHECKOUT(state, checkout) {
+      state.dataCheckout = checkout;
     },
   },
 };

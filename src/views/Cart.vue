@@ -14,7 +14,7 @@
             <ul class="-my-8">
               <li v-for="cart in getCart" :key="cart.cart_id" class="flex flex-col space-y-3 py-6 text-left sm:flex-row sm:space-x-5 sm:space-y-0">
                 <div class="shrink-0">
-                  <img class="h-24 w-24 max-w-full rounded-lg object-cover" src="https://i.pinimg.com/564x/78/90/0b/78900b5ed5d2c384e11d9eb584abf948.jpg" alt="" />
+                  <img class="h-24 w-24 max-w-full rounded-lg object-cover" src="https://i.pinimg.com/564x/1e/d9/a2/1ed9a213e183db2fb6773f8c36cc529d.jpg" alt="" />
                 </div>
 
                 <div class="relative flex flex-1 flex-col justify-between">
@@ -25,7 +25,7 @@
                     </div>
 
                     <div class="mt-4 flex items-end justify-between sm:mt-0 sm:items-start sm:justify-end">
-                      <p class="shrink-0 w-20 text-base font-semibold text-gray-900 sm:order-2 sm:ml-8 sm:text-right">$ {{ cart.regular_price * cart.qty }}</p>
+                      <p class="shrink-0 w-20 text-base font-semibold text-gray-900 sm:order-2 sm:ml-8 sm:text-right md:mr-5">{{ (cart.regular_price * cart.qty).toLocaleString('id-ID', {style: 'currency', currency: 'IDR'}) }}</p>
 
                       <div class="sm:order-1">
                         <div class="mx-auto flex h-8 items-stretch text-gray-600">
@@ -61,7 +61,11 @@
           </div>
           <div class="mt-6 flex items-center justify-between">
             <p class="text-sm font-medium text-gray-900">𝙏𝙤𝙩𝙖𝙡</p>
-            <p class="text-2xl font-semibold text-gray-900"><span class="text-xs font-normal text-gray-500">𝙐𝙎𝘿</span>&ensp;{{ totalHarga }}</p>
+            <p class="text-2xl font-semibold text-gray-900"><span class="text-xs font-normal text-gray-500">𝙐𝙎𝘿</span>&ensp;{{
+                totalHarga.toLocaleString({
+                  style: 'currency',
+                })
+              }}</p>
           </div>
 
           <div class="mt-6 text-center">

@@ -30,10 +30,17 @@
                     <td class="px-2 py-2 text-gray-600 font-semibold"> 𝘌𝘮𝘢𝘪𝘭 </td>
                     <td class="px-2 py-2"> {{ user.email }} </td>
                 </tr>
+                <tr>
+                    <td class="px-2 py-2 text-gray-600 font-semibold"> 𝘈𝘥𝘥𝘳𝘦𝘴𝘴 </td>
+                    <td class="px-2 py-2" v-for="item in address.data">
+                        {{ item.address }}, {{ item.city }}, {{ item.state }},
+                         {{ item.country }}, {{ item.postal_code }}
+                    </td>
+                </tr>
             </tbody></table>
 
             <div class="text-center my-3">
-                <a class="text-xs text-pink-700 italic hover:underline hover:text-pink -700 font-medium" href="#"> 𝙎𝙚𝙣𝙙 𝙢𝙚𝙨𝙨𝙖𝙜𝙚</a>
+                <a class="text-xs text-pink-700 italic hover:underline hover:text-pink -700 font-medium" href="/logout">𝙇𝙤𝙜𝙤𝙪𝙩</a>
             </div>
 
         </div>
@@ -48,15 +55,21 @@ import { mapActions, mapGetters } from 'vuex';
 export default {
     computed: {
         ...mapGetters("auth", ["getUser"]),
+        ...mapGetters("auth", ["gettersUserAddress"]),
         user() {
             return this.getUser;
         },
+        address() {
+         return this.gettersUserAddress;
+    },
     },
     methods: {
         ...mapActions("auth", ["getUserInfo"]),
+        ...mapActions('auth', ['getUserAddress']),
     },
     async mounted() {
         // fetch user information
+        this.getUserAddress();
         const user = await this.getUserInfo();
 
         // if user information

@@ -1,60 +1,89 @@
 <template>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900&display=swap" rel="stylesheet" />
-<div class="flex min-h-screen w-screen">
-  <div class="relative my-auto mx-auto flex flex-col px-4 sm:max-w-xl md:max-w-screen-xl md:flex-row">
-    <!-- Left Column -->
-    <div class="mx-auto flex w-full max-w-xl lg:max-w-screen-xl">
-      <div class="mb-16 lg:my-auto lg:max-w-lg">
-        <div class="mb-6 max-w-xl">
-          <div>
-            <p class="bg-teal-accent-400 mb-2 inline-block rounded-full bg-pink-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-indigo-900">25% off this shop</p>
-          </div>
-          <h2 class="mb-6 max-w-lg text-3xl font-extrabold text-slate-700 sm:text-5xl sm:leading-snug">
-            𝙁𝙖𝙣𝙩𝙖𝙨𝙮 𝙎𝙖𝙩𝙞𝙨𝙛𝙞𝙚𝙙 <br/>
-            <span class="rounded- abg-gradient-to-r inline-block bg-pink-400 from-pink-400 to-sky-400 px-2 font-bold text-white"> 𝙎𝙝𝙤𝙥𝙥𝙞𝙣𝙜 ! </span>
-          </h2>
-          <p class="text-base text-gray-700 md:text-lg"> Safe and quality shopping here. </p>
-        </div>
-        <div class="flex items-center">
-          <a href="/product" class="bg-pink-400a mr-6 inline-flex h-12 items-center justify-center rounded-full bg-gradient-to-r from-sky-400 to-pink-400 px-8 font-medium tracking-wide text-white shadow-lg shadow-pink-300 outline-none transition duration-200 hover:scale-110 hover:bg-pink-500 focus:ring"> 𝙎𝙝𝙤𝙥 𝙉𝙤𝙬 </a>
-          <a href="https://www.youtube.com/watch?v=1tk1pqwrOys" class="inline-flex items-center font-semibold text-sky-400 transition-colors duration-200 hover:text-pink-400">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
-            </svg>
-            𝘞𝘢𝘵𝘤𝘩 𝘙𝘦𝘷𝘪𝘦𝘸 </a
-          >
-        </div>
-      </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section class="mx-auto  py-16">
+  <div class="mx-auto flex w-full flex-col items-center justify-center sm:max-w-screen-sm md:max-w-screen-md lg:flex-row">
+    <div class="text-center">
+        <h2 class="bg-clip-text text-3xl font-extrabold text-gray-700 sm:text-5xl">Mega Sale!</h2>
+        <br>
+        <p class="bg-gradient-to-r from-pink-500 to-indigo-500 bg-clip-text text-4xl font-extrabold text-transparent sm:text-6xl">Let's shopping to our heart's content.</p>
+        <a href="/product" class="shadow-pink-600/30 mt-10 inline-flex h-12 items-center rounded-full bg-pink-500 px-6 py-3 text-xl font-light text-white shadow-md transition hover:translate-y-1 hover:scale-105 hover:bg-pink-600 hover:shadow-lg">𝘝𝘪𝘦𝘸 𝘱𝘳𝘰𝘥𝘶𝘤𝘵</a>
     </div>
-    <!-- /Left Column -->
+  </div>
+</section>
 
-    <!-- Right Column -->
-    <div class="flex h-full w-full space-x-3 overflow-hidden md:justify-end"> 
-      <!-- Col 2 -->
-      <div class="hidden w-56 items-center space-y-3 lg:flex">
-        <div class="overflow-hidden rounded-xl bg-yellow-400">
-          <img class="h-full w-full object-cover" src="https://i.pinimg.com/564x/0e/7f/93/0e7f9389ee6c4388691f8b9f42f0aa0b.jpg" alt="" />
-        </div>
-      </div>
-      <div class="w-full flex-col space-y-3 rounded-xl py-4 lg:flex lg:w-80">
-        <div class="h-40 overflow-hidden rounded-xl bg-green-600/60">
-          <img class="mx-auto h-full w-full object-cover" src="https://i.pinimg.com/564x/8b/c8/7b/8bc87bc8fdc9856323d77f83877ec354.jpg" alt="" />
-        </div>
-        <div class="h-40 overflow-hidden rounded-xl bg-pink-600/60">
-          <img class="mx-auto h-full w-full object-cover" src="https://i.pinimg.com/564x/9c/9e/3d/9c9e3db0833a1db4fc2617551ffc8007.jpg" alt="" />
-        </div>
-        <div class="h-40 overflow-hidden rounded-xl bg-blue-600/60">
-          <img class="mx-auto h-full w-full object-cover" src="https://i.pinimg.com/564x/0a/71/89/0a71897344043272630a52816dd6c313.jpg" alt="" />
-        </div>
-      </div>
+<p class="text-gray-500 dark:text-gray-400"></p>
+<div class="inline-flex items-center justify-center w-full">
+    <hr class="w-64 h-1 my-8 bg-gray-400 border-0 rounded dark:bg-gray-700">
+    <div class="absolute px-4 -translate-x-1/2 bg-white left-1/2 dark:bg-gray-900">
+        <svg class="w-4 h-4 text-gray-700 dark:text-gray-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+    <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+  </svg>
     </div>
-    <!-- /Right Column -->
-  </div> 
 </div>
-</template>
 
-<style>
-  * {
-  font-family: 'Source Sans Pro';
-  }
-</style>
+ <!-- section 2 -->
+ <br>
+ <br>
+ <br>
+ <br>
+ <section class="w-max-full">
+  <div class="container mx-auto bg-pink-100 p-10">
+    <span class="text-3xl font-semibold text-gray-800">𝙊𝙪𝙧 𝙢𝙖𝙞𝙣 𝙥𝙧𝙤𝙙𝙪𝙘𝙩</span>
+    <div class="grid grid-cols-4 gap-4">
+      <div v-for="product in getProducts.slice(0,4)" :id="product.id" class="group my-10 flex w-full max-w-xs flex-col overflow-hidden border border-gray-100 bg-white shadow-md">
+  <router-link :to="{ name: 'SingleProduct', params: { slug: product.slug } }" class="relative flex h-60 overflow-hidden">
+    <img class="absolute top-0 right-0 h-full w-full object-cover" src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1072&q=80" alt="product image" />
+  </router-link>
+    <div class="absolute -right-16 bottom-0 mr-2 mb-4 space-y-2 transition-all duration-300 group-hover:right-0">
+      <button class="flex h-10 w-10 items-center justify-center bg-gray-900 text-white transition hover:bg-gray-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+
+  <div class="mt-4 px-5 pb-5">
+    
+      <h5 class="text-xl tracking-tight text-slate-900">{{ product.name }}</h5>
+  
+    <div class="mt-2 mb-5 flex items-center justify-between">
+      <p>
+        <span class="text-2xl font-bold text-slate-900">{{ product.base_price.toLocaleString('id-ID', {style: 'currency', currency: 'IDR'}) }}</span>
+        
+      </p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+ </section>
+</template> 
+<script>
+import { mapGetters, mapActions } from 'vuex';
+
+export default {
+    computed: {
+        ...mapGetters('product', ['getProducts']),
+    },
+    methods: {
+        ...mapActions('product', ['fetchProducts']),
+        // getImage(imageURL) {
+        //     return {
+        //         'src': `${imageURL}`,
+        //         'background-size': 'cover',
+        //         'background-position': 'center',
+        //     };
+        // },
+    },
+    mounted() {
+        this.fetchProducts();
+    },
+}
+</script> 

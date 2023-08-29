@@ -33,7 +33,7 @@
         <p class="mb-4">Weekend: Closed</p>
         <p class="mb-4">
           Email:
-          <a href="#" class="font-semibold underline">novi's@shop.id</a>
+          <a href="#" class="font-semibold underline">novi's@fashion.id</a>
         </p>
         <p class="mb-4">
           Phone:
@@ -46,4 +46,4 @@
     </div>
   </div>
 </div>
-</template>
+</template> 

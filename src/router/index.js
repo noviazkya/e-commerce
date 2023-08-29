@@ -8,6 +8,7 @@ import Category from "../views/Category.vue";
 import SingleProduct from "../views/SingleProduct.vue";
 import Cart from "../views/Cart.vue";
 import Checkout from "../views/Checkout.vue";
+import Order from "../views/Order.vue";
 import Contact from "../views/Contact.vue";
 import Profile from "../views/Profile.vue";
 import store from "../store";
@@ -65,6 +66,13 @@ const routes = [
         name: "Checkout",
         component: Checkout,
         meta: { requiresLogin: true }
+    },
+    {
+        path: "/order/:orderCode",
+        name: "Order",
+        component: Order,
+        meta: { requiresLogin: true },
+        props: true,
     },
     {
         path: "/contact",
